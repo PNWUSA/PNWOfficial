@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PNW Official | Premium Activewear Manufacturer</title>
+  <meta name="description" content="High-end Activewear B2B OEM / Private Label manufacturer. Low MOQ, advanced fabrics, fast sampling, and premium production.">
+  <!-- Google Fonts: Outfit for titles, Inter for body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+  <!-- Three.js Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="#" class="brand-logo" id="logo-container">
+        <!-- SVG Logo will be dynamically injected or loaded here -->
+        <object id="logo-svg" data="logo_pnw.svg" type="image/svg+xml" aria-label="PNW Logo"></object>
+      </a>
+      
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="#home" class="nav-link active" data-i18n="nav_home">Home</a></li>
+          <li><a href="#products" class="nav-link" data-i18n="nav_products">Capabilities</a></li>
+          <li><a href="#fabrics" class="nav-link" data-i18n="nav_fabrics">Fabrics</a></li>
+          <li><a href="#services" class="nav-link" data-i18n="nav_services">Services</a></li>
+          <li><a href="#about" class="nav-link" data-i18n="nav_about">About</a></li>
+          <li><a href="#faq" class="nav-link" data-i18n="nav_faq">FAQ</a></li>
+          <li><a href="#contact" class="btn btn-nav" data-i18n="nav_contact">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Language Switcher -->
+        <button id="lang-switcher" class="lang-toggle" aria-label="Switch Language">
+          <span class="lang-text">ZH</span>
+        </button>
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-bg-canvas" id="hero-canvas-container"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <h1 data-i18n="hero_title" class="reveal-text">Premium Activewear Manufacturer for Growing Brands</h1>
+        <p data-i18n="hero_subtitle" class="hero-subtitle reveal-text-delay">Zero MOQ · Advanced Fabric · Fast Sampling</p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-primary" data-i18n="hero_cta_quote">Get a Quote</a>
+          <a href="#contact" class="btn btn-secondary" data-i18n="hero_cta_sample">Request Sample</a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span class="mouse">
+        <span class="wheel"></span>
+      </span>
+      <span class="arrow"></span>
+    </div>
+  </section>
+
+  <!-- Capabilities / Products Showcase -->
+  <section id="products" class="products-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="section_products_title">Product Capabilities</h2>
+        <p data-i18n="section_products_sub">Sleek designs, high-end stitching, and customizable components built for performance.</p>
+      </div>
+
+      <div class="products-grid">
+        <!-- Card 1: Shorts -->
+        <div class="product-card" data-product="shorts">
+          <div class="product-visual">
+            <canvas class="webgl-product-canvas" data-type="shorts"></canvas>
+            <div class="visual-blueprint-overlay">
+              <span class="blueprint-tag">STYLE / 01</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 data-i18n="product_shorts_name">Performance Gym Shorts</h3>
+            <p data-i18n="product_shorts_desc">Engineered for maximum mobility and breathability. Features laser-cut ventilation and optional zipper pocket integration.</p>
+            <div class="product-specs">
+              <div class="spec-group">
+                <span class="spec-label" data-i18n="spec_fabric">Available Fabrics</span>
+                <span class="spec-val" data-i18n="product_shorts_fabrics">Nylon-Spandex Blend / Recycled Polyester</span>
+              </div>
+              <div class="spec-group">
+                <span class="spec-label" data-i18n="spec_custom">Customizable Options</span>
+                <span class="spec-val" data-i18n="product_shorts_custom">Custom length, liner options, waistband printing, reflective logos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Leggings -->
+        <div class="product-card" data-product="leggings">
+          <div class="product-visual">
+            <canvas class="webgl-product-canvas" data-type="leggings"></canvas>
+            <div class="visual-blueprint-overlay">
+              <span class="blueprint-tag">STYLE / 02</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 data-i18n="product_leggings_name">Sculpt High-Waist Leggings</h3>
+            <p data-i18n="product_leggings_desc">High-compression, squat-proof leggings with seamless construction for ultimate comfort and contouring.</p>
+            <div class="product-specs">
+              <div class="spec-group">
+                <span class="spec-label" data-i18n="spec_fabric">Available Fabrics</span>
+                <span class="spec-val" data-i18n="product_leggings_fabrics">Interlock Nylon-Spandex / Brushed Polyester</span>
+              </div>
+              <div class="spec-group">
+                <span class="spec-label" data-i18n="spec_custom">Customizable Options</span>
+                <span class="spec-val" data-i18n="product_leggings_custom">Waistband height, pocket addition, laser-cut patterns, seamless knit logos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Tee -->
+        <div class="product-card" data-product="tee">
+          <div class="product-visual">
+            <canvas class="webgl-product-canvas" data-type="tee"></canvas>
+            <div class="visual-blueprint-overlay">
+              <span class="blueprint-tag">STYLE / 03</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 data-i18n="product_tee_name">Premium Oversized Tee</h3>
+            <p data-i18n="product_tee_desc">Heavyweight active tee with dropped shoulders, built to survive intense workouts and casual street styling.</p>
+            <div class="product-specs">
+              <div class="spec-group">
+                <span class="spec-label" data-i18n="spec_fabric">Available Fabrics</span>
+                <span class="spec-val" data-i18n="product_tee_fabrics">100% Premium Cotton / Pima-Cotton Blend / Polyester-Cotton</span>
+              </div>
+              <div class="spec-group">
+                <span class="spec-label" data-i18n="spec_custom">Customizable Options</span>
+                <span class="spec-val" data-i18n="product_tee_custom">Fabric weight (GSM), neckline ribbing width, custom wash effects, screen print/embroidery</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Hoodie -->
+        <div class="product-card" data-product="hoodie">
+          <div class="product-visual">
+            <canvas class="webgl-product-canvas" data-type="hoodie"></canvas>
+            <div class="visual-blueprint-overlay">
+              <span class="blueprint-tag">STYLE / 04</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 data-i18n="product_hoodie_name">Aesthetic Fleece Hoodie</h3>
+            <p data-i18n="product_hoodie_desc">High-density warmth with a structured modern drape, perfect for pre-workout warmups and lifestyle athleisure.</p>
+            <div class="product-specs">
+              <div class="spec-group">
+                <span class="spec-label" data-i18n="spec_fabric">Available Fabrics</span>
+                <span class="spec-val" data-i18n="product_hoodie_fabrics">Cotton Fleece / Tech Fleece Blend / Recycled Polyester</span>
+              </div>
+              <div class="spec-group">
+                <span class="spec-label" data-i18n="spec_custom">Customizable Options</span>
+                <span class="spec-val" data-i18n="product_hoodie_custom">Double-lined hood, hidden pockets, custom drawcords, premium high-build print</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fabric Showcase -->
+  <section id="fabrics" class="fabrics-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="section_fabrics_title">Advanced Performance Fabrics</h2>
+        <p data-i18n="section_fabrics_sub">We source and develop innovative textiles that deliver top-tier feel, elasticity, and durability.</p>
+      </div>
+
+      <div class="fabrics-grid">
+        <!-- Fabric 1 -->
+        <div class="fabric-card">
+          <div class="fabric-visual">
+            <canvas class="webgl-fabric-canvas" data-fabric="nylon"></canvas>
+            <div class="fabric-card-tags">
+              <span class="tag" data-i18n="fabric_nylon_tags">Squat-Proof · Ultra-Soft · 4-Way Stretch</span>
+            </div>
+          </div>
+          <div class="fabric-info">
+            <h3 data-i18n="fabric_nylon_name">UltraShield Nylon Spandex</h3>
+            <p data-i18n="fabric_nylon_desc">Premium 4-way stretch fabric with high spandex ratio. Butter-soft hand feel, strong shape retention, and squat-proof opacity.</p>
+          </div>
+        </div>
+
+        <!-- Fabric 2 -->
+        <div class="fabric-card">
+          <div class="fabric-visual">
+            <canvas class="webgl-fabric-canvas" data-fabric="poly"></canvas>
+            <div class="fabric-card-tags">
+              <span class="tag" data-i18n="fabric_poly_tags">Eco-Friendly · Dry-Tech · Lightweight</span>
+            </div>
+          </div>
+          <div class="fabric-info">
+            <h3 data-i18n="fabric_poly_name">EcoGlide Recycled Polyester</h3>
+            <p data-i18n="fabric_poly_desc">Sustainable performance fabric made from post-consumer recycled plastic bottles. High moisture-wicking and quick-drying capabilities.</p>
+          </div>
+        </div>
+
+        <!-- Fabric 3 -->
+        <div class="fabric-card">
+          <div class="fabric-visual">
+            <canvas class="webgl-fabric-canvas" data-fabric="knit"></canvas>
+            <div class="fabric-card-tags">
+              <span class="tag" data-i18n="fabric_knit_tags">Frictionless · Zone Compression · Max Breathable</span>
+            </div>
+          </div>
+          <div class="fabric-info">
+            <h3 data-i18n="fabric_knit_name">FlexKnit Seamless Tech</h3>
+            <p data-i18n="fabric_knit_desc">Engineered seamless construction that maps compression zones to your body. Minimizes friction and maximizes breathability.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workflow / Services -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="section_services_title">Our OEM Workflow</h2>
+        <p data-i18n="section_services_sub">From concept to delivery, our streamlined process ensures retail-ready garments at high speed.</p>
+      </div>
+
+      <div class="services-timeline">
+        <!-- Step 1 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 data-i18n="service_step_1">01. Design & Tech Pack</h3>
+          <p data-i18n="service_step_1_desc">Submit your sketch, reference garment, or full Tech Pack. Our design team assists in refining blueprints and specs.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 data-i18n="service_step_2">02. Fast Sampling</h3>
+          <p data-i18n="service_step_2_desc">We select the correct fabrics and produce your custom samples within 7-10 days, allowing you to test fit and texture.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 data-i18n="service_step_3">03. Production</h3>
+          <p data-i18n="service_step_3_desc">State-of-the-art sewing machines and strict inline quality control guarantee that bulk orders match the approved sample.</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M10 17l5-5-5-5M13.8 12H3m18 0c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 data-i18n="service_step_4">04. Global Delivery</h3>
+          <p data-i18n="service_step_4_desc">We package to your retail specifications and ship globally using fast air freight or reliable sea logistics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Factory Story Section -->
+  <section id="factory" class="factory-section">
+    <div class="container factory-container">
+      <div class="factory-info">
+        <h2 data-i18n="section_story_title">Behind the Craft</h2>
+        <p data-i18n="section_story_sub" class="sub-label">Combining advanced textile tech with expert manufacturing practices.</p>
+        <p data-i18n="section_story_desc" class="factory-desc">
+          At PNW, we believe manufacturing shouldn't be a black box. Our facility features modern machinery, specialized seamstresses, and rigorous QC protocols. Watch our factory tour to see how your vision becomes reality.
+        </p>
+      </div>
+      <div class="factory-video-wrapper">
+        <div class="video-container">
+          <!-- Placeholder with high-end poster overlay -->
+          <div class="video-poster" id="video-poster">
+            <div class="play-btn" id="play-button" aria-label="Play Factory Video">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </div>
+            <div class="poster-overlay">
+              <span>PNW STUDIO TOUR / 2026</span>
+            </div>
+          </div>
+          <!-- Clean local video tag (will be loaded once actual file is provided) -->
+          <video id="factory-video" src="factory_tour.mp4" loop muted playsinline preload="metadata"></video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Brand Strengths -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="section_about_title">Why Partner With PNW?</h2>
+        <p data-i18n="section_about_sub">Built to scale with modern brands, solving the common bottlenecks of garment manufacturing.</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Feature 1: No MOQ -->
+        <div class="about-card">
+          <div class="about-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8 12h8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 data-i18n="about_feature_moq_title">Zero MOQ Limits</h3>
+          <p data-i18n="about_feature_moq_desc">We support growing brands and private labels by eliminating rigid minimum order quantities. Start your line with confidence.</p>
+        </div>
+
+        <!-- Feature 2: Activewear Specialist -->
+        <div class="about-card">
+          <div class="about-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v8H2zm4 8v2M14 16v2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 data-i18n="about_feature_focus_title">Activewear Specialists</h3>
+          <p data-i18n="about_feature_focus_desc">Unlike general factories, we only build performance activewear and premium athleisure. We know the details that matter.</p>
+        </div>
+
+        <!-- Feature 3: Quality -->
+        <div class="about-card">
+          <div class="about-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M22 4L12 14.01l-3-3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 data-i18n="about_feature_quality_title">Reliable & Transparent</h3>
+          <p data-i18n="about_feature_quality_desc">Transparent communication, on-time delivery commitments, and consistent product sizing across batches.</p>
+        </div>
+      </div>
+
+      <!-- Trust Brand Roll Bar (Placeholder container for future brands) -->
+      <div class="brand-roll-container">
+        <div class="brand-roll-title">TRUSTED BY DESIGNERS & BRANDS GLOBALLY</div>
+        <div class="brand-roll-track">
+          <!-- Hidden marquee tracks ready for client logos -->
+          <div class="brand-item">BRAND ALIGNMENT</div>
+          <div class="brand-item">TECHNICAL ATHLETICS</div>
+          <div class="brand-item">ECO SPORT CO</div>
+          <div class="brand-item">OBSIDIAN STUDIO</div>
+          <div class="brand-item">CORE ATHLETICS</div>
+          <div class="brand-item">AESTHETIC LAB</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="section_faq_title">Frequently Asked Questions</h2>
+        <p data-i18n="section_faq_sub">Everything you need to know about starting an OEM partnership with PNW.</p>
+      </div>
+
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="faq_q1">What is your Minimum Order Quantity (MOQ)?</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq_a1">We offer Zero MOQ limits for initial launch collections. This allows you to test the market with various sizes and styles without heavy inventory risk.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="faq_q2">How long does the custom sampling process take?</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq_a2">Standard activewear samples take 7 to 10 working days, depending on fabric availability and complexity of the design.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="faq_q3">Can you source custom fabrics or colors?</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq_a3">Yes. We work closely with leading fabric mills to source specific technical specs or dye custom Pantone colors for your brand.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="faq_q4">Do you provide labels, tags, and packaging customization?</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq_a4">Absolutely. We offer full private label branding: custom woven labels, heat-transfer neck tags, hang tags, and branded biodegradable polybags.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form & Info -->
+  <section id="contact" class="contact-section">
+    <div class="container contact-container">
+      <div class="contact-form-wrapper">
+        <h2 data-i18n="section_contact_title">Start Your Project</h2>
+        <p data-i18n="section_contact_sub" class="contact-sub">Tell us about your brand goals. Our activewear experts will respond within 24 hours.</p>
+        
+        <form id="oem-contact-form" class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="client-name" data-i18n="contact_form_name">Full Name</label>
+              <input type="text" id="client-name" name="name" required placeholder="Jane Doe">
+            </div>
+            <div class="form-group">
+              <label for="client-email" data-i18n="contact_form_email">Business Email</label>
+              <input type="email" id="client-email" name="email" required placeholder="jane@yourbrand.com">
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="client-brand" data-i18n="contact_form_brand">Brand Name</label>
+            <input type="text" id="client-brand" name="brand" required placeholder="Your Activewear Brand">
+          </div>
+          
+          <div class="form-group">
+            <label for="client-message" data-i18n="contact_form_message">Project Details (Styles, fabrics, estimated quantities...)</label>
+            <textarea id="client-message" name="message" rows="5" required placeholder="Tell us what you want to create..."></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary btn-submit" id="btn-submit-form">
+            <span data-i18n="contact_form_submit">Submit Inquiry</span>
+          </button>
+          
+          <div class="form-feedback hide" id="form-feedback" data-i18n="contact_form_success">
+            Thank you! Your inquiry has been sent successfully. We will get back to you shortly.
+          </div>
+        </form>
+      </div>
+
+      <div class="contact-direct-info">
+        <div class="info-card">
+          <div class="info-logo">
+            <!-- Mini Logo -->
+            <span>PNW</span>
+          </div>
+          <div class="info-details">
+            <div class="info-item">
+              <span class="label">EMAIL</span>
+              <a href="mailto:info@pnwusainc.com" class="value">info@pnwusainc.com</a>
+            </div>
+            <div class="info-item">
+              <span class="label">WHATSAPP</span>
+              <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" class="value">+1 (234) 567-890</a>
+            </div>
+          </div>
+          
+          <div class="whatsapp-cta-box">
+            <span data-i18n="contact_form_or">Or reach out directly via</span>
+            <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="wa-icon">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.966C16.59 1.988 14.113 1.057 11.99 1.057c-5.444 0-9.871 4.37-9.875 9.8-.001 1.774.473 3.5 1.373 5.04L2.5 21.752l6.147-1.598zM17.842 14.5c-.32-.16-1.89-.93-2.185-1.04-.294-.11-.51-.16-.723.16-.214.32-.828 1.04-1.014 1.25-.187.21-.374.24-.694.08-.32-.16-1.353-.5-2.578-1.593-.952-.85-1.595-1.9-1.782-2.22-.187-.32-.02-.49.14-.65.144-.144.32-.37.48-.56.16-.19.213-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.723-1.74-.99-2.38-.26-.63-.52-.54-.723-.55-.186-.01-.4-.01-.613-.01-.214 0-.56.08-.854.4-.294.32-1.123 1.1-1.123 2.68 0 1.58 1.15 3.11 1.31 3.32.16.21 2.264 3.46 5.485 4.85.766.33 1.363.53 1.83.68.77.24 1.47.21 2.02.13.615-.09 1.89-.77 2.157-1.48.267-.71.267-1.32.187-1.45-.08-.13-.294-.21-.615-.37z"/>
+              </svg>
+              <span>WhatsApp Us</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-logo">PNW</span>
+        <p class="footer-copy">&copy; 2026 PNW USA Inc. <span data-i18n="footer_rights">All Rights Reserved.</span></p>
+      </div>
+      <div class="footer-right">
+        <p class="footer-disclaimer" data-i18n="footer_disclaimer">All product images are interactive vector representations for OEM design reference. Real fabric samples available upon request.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="app.js"></script>
+</body>
+</html>
