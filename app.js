@@ -13,7 +13,7 @@ const translations = {
     "nav_faq": "FAQ",
     "nav_contact": "Contact Us",
     "hero_title": "Your Dedicated Manufacturing Partner for Independent Lifestyle Brands",
-    "hero_subtitle": "Zero MOQ · Advanced Fabric · Fast Sampling",
+    "hero_subtitle": "Low MOQ · Advanced Fabric · Fast Sampling",
     "hero_cta_quote": "Get in Touch",
     "hero_cta_sample": "Schedule a Call",
     "section_products_title": "Product Capabilities",
@@ -57,21 +57,21 @@ const translations = {
     "service_step_3_desc": "State-of-the-art sewing machines and strict inline quality control guarantee that bulk orders match the approved sample.",
     "service_step_4": "04. Global Delivery",
     "service_step_4_desc": "We package to your retail specifications and ship globally using fast air freight or reliable sea logistics.",
-    "section_story_title": "Masterful Craftsmanship, Global Scale",
-    "section_story_sub": "Precision-driven manufacturing from our facilities in China and Cambodia, with dedicated sales support in the U.S. and Australia.",
-    "section_story_desc": "At PNW, every garment reflects our obsession with precision. Our production facilities in China and Cambodia house advanced flatlock and overlock machinery, laser-cutting systems, and specialized seamstresses with decades of activewear expertise. From reinforced bonded seams and ergonomic stitching patterns to meticulous hand-finished quality checks — we ensure your product rivals top-tier retail brands. Our U.S. and Australia sales teams provide seamless, timezone-friendly communication throughout your project.",
+    "section_story_title": "Crafted for Excellence, Built to Perform",
+    "section_story_sub": "Precision-driven manufacturing from our facilities in China and Cambodia, with dedicated sales support in the U.S.",
+    "section_story_desc": "At PNW, every garment reflects our commitment to excellence. Our production facilities in China and Cambodia house advanced flatlock and overlock machinery, laser-cutting systems, and specialized seamstresses with decades of activewear expertise. From reinforced bonded seams and ergonomic stitching patterns to meticulous hand-finished quality checks — we ensure your product rivals top-tier retail brands. Our U.S. sales team provides seamless, timezone-friendly communication throughout your project.",
     "section_about_title": "Why Partner With PNW?",
     "section_about_sub": "Built to scale with modern brands, solving the common bottlenecks of garment manufacturing.",
-    "about_feature_moq_title": "Zero MOQ Limits",
+    "about_feature_moq_title": "Low MOQ Limits",
     "about_feature_moq_desc": "We support growing brands and private labels by eliminating rigid minimum order quantities. Start your line with confidence.",
     "about_feature_focus_title": "Activewear Specialists",
     "about_feature_focus_desc": "Unlike general factories, we only build performance activewear and premium athleisure. We know the details that matter.",
     "about_feature_quality_title": "Reliable & Transparent",
-    "about_feature_quality_desc": "With sales teams based in the U.S. and Australia, we provide timezone-friendly bilingual communication, precise delivery commitments, and consistent sizing across every production batch.",
+    "about_feature_quality_desc": "With sales teams based in the U.S., we provide timezone-friendly bilingual communication, precise delivery commitments, and consistent sizing across every production batch.",
     "section_faq_title": "Frequently Asked Questions",
     "section_faq_sub": "Everything you need to know about starting an OEM partnership with PNW.",
     "faq_q1": "What is your Minimum Order Quantity (MOQ)?",
-    "faq_a1": "We offer Zero MOQ limits for initial launch collections. This allows you to test the market with various sizes and styles without heavy inventory risk.",
+    "faq_a1": "We offer Low MOQ limits for initial launch collections. This allows you to test the market with various sizes and styles without heavy inventory risk.",
     "faq_q2": "How long does the custom sampling process take?",
     "faq_a2": "Standard activewear samples take 7 to 10 working days, depending on fabric availability and complexity of the design.",
     "faq_q3": "Can you source custom fabrics or colors?",
@@ -316,6 +316,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initContactForm();
   initFactoryVideo();
   initActiveLinks();
+  initBackgroundColorSwitcher();
   
   // Initialize WebGL/Three.js Animations
   initHeroBackground();
@@ -506,6 +507,67 @@ function initActiveLinks() {
       }
     });
   });
+}
+
+// Background Color Switcher
+function initBackgroundColorSwitcher() {
+  const colorSwitcherBtn = document.getElementById("bg-color-switcher");
+  const bgDot = colorSwitcherBtn?.querySelector(".bg-dot");
+
+  if (!colorSwitcherBtn) return;
+
+  // Define color palette: various blues and other colors (no red)
+  const colorPalette = [
+    { class: "bg-white", hex: "#ffffff", label: "White" },
+    { class: "bg-navy", hex: "#0a1929", label: "Navy" },
+    { class: "bg-slate-blue", hex: "#2c3e50", label: "Slate Blue" },
+    { class: "bg-steel", hex: "#3d4a5c", label: "Steel" },
+    { class: "bg-slate", hex: "#708090", label: "Slate" },
+    { class: "bg-light-gray", hex: "#e8e8e8", label: "Light Gray" },
+    { class: "bg-sky", hex: "#87ceeb", label: "Sky" },
+    { class: "bg-powder-blue", hex: "#b0e0e6", label: "Powder Blue" },
+    { class: "bg-dark", hex: "#1a1a1a", label: "Dark" }
+  ];
+
+  let currentColorIndex = 0;
+
+  colorSwitcherBtn.addEventListener("click", () => {
+    // Remove previous color class
+    document.body.classList.remove(...colorPalette.map(c => c.class));
+
+    // Move to next color
+    currentColorIndex = (currentColorIndex + 1) % colorPalette.length;
+    const selectedColor = colorPalette[currentColorIndex];
+
+    // Apply new color class
+    document.body.classList.add(selectedColor.class);
+
+    // Update dot color to reflect current background
+    if (bgDot) {
+      bgDot.style.backgroundColor = selectedColor.hex;
+    }
+
+    // Save preference to localStorage
+    localStorage.setItem("pnw-bg-color", selectedColor.class);
+  });
+
+  // Load saved preference on page load
+  const savedColor = localStorage.getItem("pnw-bg-color");
+  if (savedColor) {
+    const savedColorObj = colorPalette.find(c => c.class === savedColor);
+    if (savedColorObj) {
+      currentColorIndex = colorPalette.indexOf(savedColorObj);
+      document.body.classList.add(savedColor);
+      if (bgDot) {
+        bgDot.style.backgroundColor = savedColorObj.hex;
+      }
+    }
+  } else {
+    // Set initial dot color to dark (default)
+    if (bgDot) {
+      bgDot.style.backgroundColor = "#000000";
+    }
+  }
 }
 
 
