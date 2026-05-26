@@ -386,10 +386,16 @@ a {
   overflow: hidden;
 }
 
-.webgl-product-canvas {
+.product-img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   display: block;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.05);
 }
 
 .visual-blueprint-overlay {
@@ -573,6 +579,85 @@ a {
 .service-card p {
   font-size: 0.875rem;
   font-weight: 300;
+}
+
+/* Production Craftsmanship Section */
+.craftsmanship-section {
+  padding: 120px 0;
+  background-color: var(--color-bg-darkest);
+  border-top: 1px solid var(--color-border);
+}
+
+.craftsmanship-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 992px) {
+  .craftsmanship-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .craftsmanship-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.craft-card {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 32px;
+  transition: var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.craft-card:hover {
+  border-color: var(--color-accent-gold);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.craft-icon-wrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  background-color: rgba(var(--color-accent-gold-rgb), 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  color: var(--color-accent-gold);
+  border: 1px solid rgba(var(--color-accent-gold-rgb), 0.1);
+  transition: var(--transition-smooth);
+}
+
+.craft-card:hover .craft-icon-wrapper {
+  background-color: var(--color-accent-gold);
+  color: var(--color-bg-darkest);
+  border-color: var(--color-accent-gold);
+}
+
+.craft-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.craft-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 12px;
+  color: var(--color-text-primary);
+}
+
+.craft-card p {
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.6;
 }
 
 /* Factory Story Section */

@@ -15,7 +15,7 @@ const translations = {
     "hero_title": "Your Dedicated Manufacturing Partner for Independent Activewear Brands",
     "hero_subtitle": "Zero MOQ · Advanced Fabric · Fast Sampling",
     "hero_cta_quote": "Get in Touch",
-    "hero_cta_sample": "Request Sample",
+    "hero_cta_sample": "Schedule a Call",
     "section_products_title": "Product Capabilities",
     "section_products_sub": "Sleek designs, high-end stitching, and customizable components built for performance.",
     "product_shorts_name": "Performance Gym Shorts",
@@ -88,7 +88,21 @@ const translations = {
     "contact_form_or": "Or reach out directly via",
     "contact_form_success": "Thank you! Your inquiry has been sent successfully. We will get back to you shortly.",
     "footer_rights": "All Rights Reserved.",
-    "footer_disclaimer": "All product images are interactive vector representations for OEM design reference. Real fabric samples available upon request."
+    "footer_disclaimer": "Real fabric samples available upon request.",
+    "section_craftsmanship_title": "Production Craftsmanship",
+    "section_craftsmanship_sub": "Discover the technical details and advanced processes behind our premium activewear.",
+    "craft_1_title": "Tech Pack & Patterning",
+    "craft_1_desc": "Digitize sketches into blueprints and perform 3D fit testing for sizing consistency.",
+    "craft_2_title": "Fabric & Trim Sourcing",
+    "craft_2_desc": "Source premium tech fabrics, dye custom Pantone colors, and procure high-quality trims.",
+    "craft_3_title": "Precision Laser Cutting",
+    "craft_3_desc": "Utilize automated spreaders and laser cutters for clean, fray-free edges and ventilation.",
+    "craft_4_title": "Advanced Stitching",
+    "craft_4_desc": "Apply flatlock (4-needle 6-thread) seams and bartacking for durable, friction-free performance.",
+    "craft_5_title": "Private Label & Packaging",
+    "craft_5_desc": "Integrate heat-transfer wash tags, woven labels, hangtags, and eco-friendly polybags.",
+    "craft_6_title": "Multi-Stage Inspection",
+    "craft_6_desc": "Perform inline check, manual trim cleaning, and professional steam pressing before packing."
   },
   "zh": {
     "nav_home": "首頁",
@@ -101,7 +115,7 @@ const translations = {
     "hero_title": "獨立運動品牌的專屬代工製造夥伴",
     "hero_subtitle": "零起訂量限制 · 高階機能面料 · 快速樣衣打樣",
     "hero_cta_quote": "聯繫我們",
-    "hero_cta_sample": "申請樣衣",
+    "hero_cta_sample": "預約諮詢",
     "section_products_title": "製造與代工能力",
     "section_products_sub": "極簡美學設計、高規車縫工藝與全方位可定制細節，為運動表現而生。",
     "product_shorts_name": "機能訓練短褲",
@@ -174,7 +188,21 @@ const translations = {
     "contact_form_or": "或者直接透過以下方式聯繫我",
     "contact_form_success": "感謝您的諮詢！我們已收到您的需求，專人將會盡快與您聯繫。",
     "footer_rights": "版權所有。",
-    "footer_disclaimer": "本站所有產品圖片均為 3D 視覺互動展示。實體面料樣品可應要求寄送。"
+    "footer_disclaimer": "實體面料樣品可應要求寄送。",
+    "section_craftsmanship_title": "精密生產工藝",
+    "section_craftsmanship_sub": "探索我們打造高品質運動服飾的精湛技術與完整工序。",
+    "craft_1_title": "工藝單與打版",
+    "craft_1_desc": "將設計草圖轉化為數位工藝單並進行 3D 版型調整，確保尺碼精準一致。",
+    "craft_2_title": "面料與輔料開發",
+    "craft_2_desc": "精選高彈機能面料、開發 Pantone 專屬染色，並採購高品質拉鍊與配件。",
+    "craft_3_title": "精密雷射裁切",
+    "craft_3_desc": "採用自動鋪料與高精密雷射切割機，裁切邊緣平整防脫線，並支援雷射雕孔。",
+    "craft_4_title": "高階車縫工藝",
+    "craft_4_desc": "運用四針六線無摩擦拼縫、包縫與高強度打棗加固，確保運動拉扯強度。",
+    "craft_5_title": "輔料與包裝客製",
+    "craft_5_desc": "定制無感熱轉印洗標、主標、吊牌，以及品牌專屬的生物可降解環保袋。",
+    "craft_6_title": "多道品檢與整燙",
+    "craft_6_desc": "大貨進行產線即時品檢與手工複檢，剪除線頭並經高溫整燙後進行包裝。"
   },
   "zh-cn": {
     "nav_home": "首页",
@@ -187,7 +215,7 @@ const translations = {
     "hero_title": "独立运动品牌的专属代工制造伙伴",
     "hero_subtitle": "零起订量限制 · 高阶功能面料 · 快速样衣打样",
     "hero_cta_quote": "联系我们",
-    "hero_cta_sample": "申请样衣",
+    "hero_cta_sample": "预约咨询",
     "section_products_title": "制造与代工能力",
     "section_products_sub": "极简美学设计、高规缝纫工艺与全方位可定制细节，为运动表现而生。",
     "product_shorts_name": "功能训练短裤",
@@ -260,7 +288,21 @@ const translations = {
     "contact_form_or": "或者直接通过以下方式联系我",
     "contact_form_success": "感谢您的咨询！我们已收到您的需求，专人将会尽快与您联系。",
     "footer_rights": "版权所有。",
-    "footer_disclaimer": "本站所有产品图片均为 3D 视觉互动展示。实体面料样品可应要求寄送。"
+    "footer_disclaimer": "实体面料样品可应要求寄送。",
+    "section_craftsmanship_title": "精密生产工艺",
+    "section_craftsmanship_sub": "探索我们打造高质量运动服饰的精湛技术与完整工序。",
+    "craft_1_title": "工艺单与打版",
+    "craft_1_desc": "将设计草图转化为数字化工艺单并进行 3D 版型调整，确保码数精准一致。",
+    "craft_2_title": "面料与辅料开发",
+    "craft_2_desc": "精选高弹功能面料、开发 Pantone 专属染色，并采购高质量拉链与配件。",
+    "craft_3_title": "精密激光裁切",
+    "craft_3_desc": "采用自动铺料与高精密激光切割机，裁切边缘平整防脱线，并支持激光雕孔。",
+    "craft_4_title": "高阶缝纫工艺",
+    "craft_4_desc": "运用四针六线无摩擦拼缝、包缝与高强度打枣加固，确保运动拉扯强度。",
+    "craft_5_title": "辅料与包装定制",
+    "craft_5_desc": "定制无感热转印洗标、主标、吊牌，以及品牌专属的生物改降解环保袋。",
+    "craft_6_title": "多道品检与整烫",
+    "craft_6_desc": "大货进行产线即时品检与手工复检，剪除线头并经高温整烫后进行包装。"
   }
 };
 
@@ -277,7 +319,6 @@ document.addEventListener("DOMContentLoaded", () => {
   
   // Initialize WebGL/Three.js Animations
   initHeroBackground();
-  initProductShowcase();
   initFabricShowcase();
 });
 
@@ -468,183 +509,7 @@ function initActiveLinks() {
 }
 
 
-// --- 4. PROCEDURAL CANVASES GENERATION (CAD Outlines for Products & Fabrics) ---
-function createGarmentTexture(type) {
-  const canvas = document.createElement("canvas");
-  canvas.width = 512;
-  canvas.height = 384;
-  const ctx = canvas.getContext("2d");
-
-  // Background
-  ctx.fillStyle = "#0c0c0c";
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-  // Technical blueprint grid lines
-  ctx.strokeStyle = "#1a1a1a";
-  ctx.lineWidth = 1;
-  const gridSpacing = 32;
-  for (let x = 0; x < canvas.width; x += gridSpacing) {
-    ctx.beginPath();
-    ctx.moveTo(x, 0);
-    ctx.lineTo(x, canvas.height);
-    ctx.stroke();
-  }
-  for (let y = 0; y < canvas.height; y += gridSpacing) {
-    ctx.beginPath();
-    ctx.moveTo(0, y);
-    ctx.lineTo(canvas.width, y);
-    ctx.stroke();
-  }
-
-  // Draw central crosshair
-  ctx.strokeStyle = "#2c2c2c";
-  ctx.beginPath();
-  ctx.moveTo(canvas.width / 2, 0);
-  ctx.lineTo(canvas.width / 2, canvas.height);
-  ctx.moveTo(0, canvas.height / 2);
-  ctx.lineTo(canvas.width, canvas.height / 2);
-  ctx.stroke();
-
-  // Draw Vector Garment Outline
-  ctx.strokeStyle = "#c5a880"; // Metallic Accent Gold
-  ctx.lineWidth = 3.5;
-  ctx.lineCap = "round";
-  ctx.lineJoin = "round";
-  
-  // Blueprint aesthetic glowing shadow
-  ctx.shadowColor = "rgba(197, 168, 128, 0.4)";
-  ctx.shadowBlur = 10;
-
-  const cx = canvas.width / 2;
-  const cy = canvas.height / 2 + 10;
-
-  if (type === "shorts") {
-    // Waistband
-    ctx.beginPath();
-    ctx.moveTo(cx - 70, cy - 60);
-    ctx.quadraticCurveTo(cx, cy - 65, cx + 70, cy - 60);
-    // Left hip
-    ctx.lineTo(cx + 85, cy + 30);
-    // Left leg hem
-    ctx.lineTo(cx + 20, cy + 35);
-    // Crotch
-    ctx.lineTo(cx, cy - 10);
-    // Right leg hem
-    ctx.lineTo(cx - 20, cy + 35);
-    // Right hip
-    ctx.lineTo(cx - 85, cy + 30);
-    ctx.closePath();
-    ctx.stroke();
-
-    // Elastic drawcord
-    ctx.strokeStyle = "#86868b";
-    ctx.lineWidth = 2;
-    ctx.beginPath();
-    ctx.moveTo(cx - 5, cy - 63);
-    ctx.bezierCurveTo(cx - 15, cy - 40, cx - 8, cy - 35, cx - 12, cy - 20);
-    ctx.moveTo(cx + 2, cy - 63);
-    ctx.bezierCurveTo(cx + 12, cy - 40, cx + 5, cy - 35, cx + 8, cy - 20);
-    ctx.stroke();
-
-  } else if (type === "leggings") {
-    // High waistband
-    ctx.beginPath();
-    ctx.moveTo(cx - 45, cy - 80);
-    ctx.quadraticCurveTo(cx, cy - 84, cx + 45, cy - 80);
-    ctx.lineTo(cx + 40, cy - 30);
-    ctx.lineTo(cx - 40, cy - 30);
-    ctx.closePath();
-    ctx.stroke();
-
-    // Leggings legs
-    ctx.beginPath();
-    ctx.moveTo(cx - 40, cy - 30);
-    // Outer hip/thigh
-    ctx.quadraticCurveTo(cx - 50, cy + 20, cx - 20, cy + 90);
-    // Ankle cuff left
-    ctx.lineTo(cx - 8, cy + 88);
-    // Inner crotch
-    ctx.lineTo(cx, cy - 10);
-    // Ankle cuff right
-    ctx.lineTo(cx + 8, cy + 88);
-    // Outer hip/thigh right
-    ctx.quadraticCurveTo(cx + 50, cy + 20, cx + 40, cy - 30);
-    ctx.stroke();
-
-  } else if (type === "tee") {
-    // Collar
-    ctx.beginPath();
-    ctx.moveTo(cx - 30, cy - 65);
-    ctx.quadraticCurveTo(cx, cy - 50, cx + 30, cy - 65);
-    ctx.stroke();
-
-    // Full Tee outline
-    ctx.beginPath();
-    ctx.moveTo(cx - 30, cy - 65);
-    // Shoulder left
-    ctx.lineTo(cx - 85, cy - 55);
-    // Sleeve sleeve hem left
-    ctx.lineTo(cx - 100, cy - 10);
-    // Sleeve inner armpit left
-    ctx.lineTo(cx - 65, cy - 5);
-    // Side seam left
-    ctx.lineTo(cx - 60, cy + 70);
-    // Bottom hem
-    ctx.quadraticCurveTo(cx, cy + 73, cx + 60, cy + 70);
-    // Side seam right
-    ctx.lineTo(cx + 65, cy - 5);
-    // Sleeve inner armpit right
-    ctx.lineTo(cx + 100, cy - 10);
-    // Shoulder right
-    ctx.lineTo(cx + 30, cy - 65);
-    ctx.stroke();
-
-  } else if (type === "hoodie") {
-    // Hood folds
-    ctx.beginPath();
-    ctx.moveTo(cx - 35, cy - 45);
-    ctx.bezierCurveTo(cx - 40, cy - 95, cx + 40, cy - 95, cx + 35, cy - 45);
-    ctx.quadraticCurveTo(cx, cy - 30, cx - 35, cy - 45);
-    ctx.stroke();
-
-    // Body
-    ctx.beginPath();
-    ctx.moveTo(cx - 35, cy - 45);
-    // Shoulder & sleeve left
-    ctx.lineTo(cx - 95, cy - 35);
-    ctx.lineTo(cx - 110, cy + 40);
-    ctx.lineTo(cx - 95, cy + 45);
-    ctx.lineTo(cx - 60, cy + 5);
-    ctx.lineTo(cx - 55, cy + 75);
-    // Bottom rib hem
-    ctx.quadraticCurveTo(cx, cy + 78, cx + 55, cy + 75);
-    ctx.lineTo(cx + 60, cy + 5);
-    ctx.lineTo(cx + 95, cy + 45);
-    ctx.lineTo(cx + 110, cy + 40);
-    ctx.lineTo(cx + 95, cy - 35);
-    ctx.lineTo(cx + 35, cy - 45);
-    ctx.stroke();
-
-    // Front kangaroo pouch pocket
-    ctx.beginPath();
-    ctx.moveTo(cx - 35, cy + 70);
-    ctx.lineTo(cx - 25, cy + 35);
-    ctx.lineTo(cx + 25, cy + 35);
-    ctx.lineTo(cx + 35, cy + 70);
-    ctx.closePath();
-    ctx.stroke();
-  }
-
-  // Label tags
-  ctx.shadowBlur = 0;
-  ctx.fillStyle = "#86868b";
-  ctx.font = "10px monospace";
-  ctx.fillText("PNW SPEC / WEBGL ENGINE", 24, 30);
-  ctx.fillText("SCALE: 1:1.25", 24, 45);
-  ctx.fillText("PNWUSA CORP.", 390, 350);
-
-  return canvas;
-}
+// --- 4. PROCEDURAL CANVASES GENERATION (CAD Outlines for Fabrics) ---
 
 // Fabric canvas procedural texture creation
 function createFabricTexture(type) {
@@ -830,128 +695,7 @@ function initHeroBackground() {
 }
 
 
-// --- 6. THREE.JS PRODUCT BLUEPRINT LIQUID SHADER EFFECT ---
-function initProductShowcase() {
-  const canvases = document.querySelectorAll(".webgl-product-canvas");
-
-  canvases.forEach(canvas => {
-    const type = canvas.getAttribute("data-type");
-    const container = canvas.parentElement;
-
-    const scene = new THREE.Scene();
-    const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
-    const renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true });
-
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-    renderer.setSize(container.clientWidth, container.clientHeight);
-
-    // Create texture dynamically
-    const dynamicCanvas = createGarmentTexture(type);
-    const texture = new THREE.CanvasTexture(dynamicCanvas);
-
-    // Liquid displacement custom shader
-    const customShaderMaterial = new THREE.ShaderMaterial({
-      uniforms: {
-        uTexture: { value: texture },
-        uTime: { value: 0 },
-        uHover: { value: 0 },
-        uMouse: { value: new THREE.Vector2(0.5, 0.5) }
-      },
-      vertexShader: `
-        varying vec2 vUv;
-        void main() {
-          vUv = uv;
-          gl_Position = vec4(position, 1.0);
-        }
-      `,
-      fragmentShader: `
-        uniform sampler2D uTexture;
-        uniform float uTime;
-        uniform float uHover;
-        uniform vec2 uMouse;
-        varying vec2 vUv;
-
-        void main() {
-          vec2 uv = vUv;
-          
-          if (uHover > 0.01) {
-            // Radial distance from mouse
-            vec2 toMouse = uv - uMouse;
-            float dist = length(toMouse);
-            
-            // Warp strength increases closer to mouse, scaling with hover state
-            float force = smoothstep(0.45, 0.0, dist) * uHover * 0.07;
-            
-            // Flow angle pointing away from cursor
-            vec2 direction = normalize(toMouse + vec2(0.001)); 
-            
-            // Fluid undulating wave
-            float wave = sin(dist * 20.0 - uTime * 6.0) * force;
-            uv += direction * wave;
-          }
-          
-          vec4 texColor = texture2D(uTexture, uv);
-          gl_FragColor = texColor;
-        }
-      `
-    });
-
-    const mesh = new THREE.Mesh(new THREE.PlaneGeometry(2, 2), customShaderMaterial);
-    scene.add(mesh);
-
-    // Interaction controls
-    let isHovered = false;
-    let hoverVal = 0;
-    const targetMouse = new THREE.Vector2(0.5, 0.5);
-    const currentMouse = new THREE.Vector2(0.5, 0.5);
-
-    container.addEventListener("mouseenter", () => {
-      isHovered = true;
-    });
-
-    container.addEventListener("mousemove", (e) => {
-      const rect = container.getBoundingClientRect();
-      targetMouse.x = (e.clientX - rect.left) / rect.width;
-      // Invert Y to match UV space (0,0 bottom-left)
-      targetMouse.y = 1.0 - (e.clientY - rect.top) / rect.height;
-    });
-
-    container.addEventListener("mouseleave", () => {
-      isHovered = false;
-    });
-
-    // Animation Loop
-    const clock = new THREE.Clock();
-
-    function animate() {
-      requestAnimationFrame(animate);
-
-      const elapsedTime = clock.getElapsedTime();
-      customShaderMaterial.uniforms.uTime.value = elapsedTime;
-
-      // Smoothly animate hover uniform value
-      hoverVal += ((isHovered ? 1.0 : 0.0) - hoverVal) * 0.1;
-      customShaderMaterial.uniforms.uHover.value = hoverVal;
-
-      // Interpolate mouse coordinates smoothly
-      currentMouse.x += (targetMouse.x - currentMouse.x) * 0.15;
-      currentMouse.y += (targetMouse.y - currentMouse.y) * 0.15;
-      customShaderMaterial.uniforms.uMouse.value.copy(currentMouse);
-
-      renderer.render(scene, camera);
-    }
-
-    animate();
-
-    // Handle resizing correctly
-    window.addEventListener("resize", () => {
-      renderer.setSize(container.clientWidth, container.clientHeight);
-    });
-  });
-}
-
-
-// --- 7. THREE.JS WAVING TECH CLOTH FABRIC RENDER ---
+// --- 6. THREE.JS WAVING TECH CLOTH FABRIC RENDER ---
 function initFabricShowcase() {
   const canvases = document.querySelectorAll(".webgl-fabric-canvas");
 
