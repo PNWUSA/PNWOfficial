@@ -797,10 +797,6 @@ function initFabricShowcase() {
       side: THREE.DoubleSide
     });
 
-    const card = canvas.closest(".fabric-card");
-    const replaceButton = card?.querySelector(".fabric-replace-btn");
-    const fileInput = card?.querySelector(".fabric-file-input");
-
     const setFabricTexture = (mapTexture) => {
       material.map = mapTexture;
       material.needsUpdate = true;
@@ -840,26 +836,6 @@ function initFabricShowcase() {
       imageTexture.repeat.set(1, 1);
       return imageTexture;
     };
-
-    if (replaceButton && fileInput) {
-      replaceButton.addEventListener("click", () => {
-        fileInput.click();
-      });
-
-      fileInput.addEventListener("change", (event) => {
-        const file = event.target.files[0];
-        if (!file) return;
-
-        const url = URL.createObjectURL(file);
-        const image = new Image();
-        image.onload = () => {
-          const fileTexture = createImageTexture(image);
-          setFabricTexture(fileTexture);
-          URL.revokeObjectURL(url);
-        };
-        image.src = url;
-      });
-    }
 
     const mesh = new THREE.Mesh(geometry, material);
     scene.add(mesh);
