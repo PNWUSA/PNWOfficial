@@ -522,6 +522,25 @@ a {
   letter-spacing: 0.05em;
 }
 
+.fabric-replace-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 6px 10px;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--color-text-primary);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.75rem;
+  transition: var(--transition-smooth);
+}
+
+.fabric-replace-btn:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
 .fabric-info {
   padding: 24px;
 }

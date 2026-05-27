@@ -785,6 +785,8 @@ function initFabricShowcase() {
     // Create fabric base texture
     const dynamicCanvas = createFabricTexture(type);
     const texture = new THREE.CanvasTexture(dynamicCanvas);
+    texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
+    texture.repeat.set(1, 1);
 
     // Geometry: High vertex grid mesh to make physical fabric folds
     const geometry = new THREE.PlaneGeometry(3.6, 2.2, 30, 20);
@@ -794,6 +796,70 @@ function initFabricShowcase() {
       map: texture,
       side: THREE.DoubleSide
     });
+
+    const card = canvas.closest(".fabric-card");
+    const replaceButton = card?.querySelector(".fabric-replace-btn");
+    const fileInput = card?.querySelector(".fabric-file-input");
+
+    const setFabricTexture = (mapTexture) => {
+      material.map = mapTexture;
+      material.needsUpdate = true;
+    };
+
+    const tryLoadFabricImage = () => {
+      const loader = new THREE.TextureLoader();
+      const imagePaths = [
+        `images/fabric/${type}.jpg`,
+        `images/fabric/${type}.png`,
+        `images/fabric/${type}.webp`
+      ];
+
+      const tryPath = (index) => {
+        if (index >= imagePaths.length) return;
+        loader.load(
+          imagePaths[index],
+          (loadedTexture) => {
+            loadedTexture.wrapS = loadedTexture.wrapT = THREE.RepeatWrapping;
+            loadedTexture.repeat.set(1, 1);
+            setFabricTexture(loadedTexture);
+          },
+          undefined,
+          () => tryPath(index + 1)
+        );
+      };
+
+      tryPath(0);
+    };
+
+    tryLoadFabricImage();
+
+    const createImageTexture = (image) => {
+      const imageTexture = new THREE.Texture(image);
+      imageTexture.needsUpdate = true;
+      imageTexture.wrapS = imageTexture.wrapT = THREE.RepeatWrapping;
+      imageTexture.repeat.set(1, 1);
+      return imageTexture;
+    };
+
+    if (replaceButton && fileInput) {
+      replaceButton.addEventListener("click", () => {
+        fileInput.click();
+      });
+
+      fileInput.addEventListener("change", (event) => {
+        const file = event.target.files[0];
+        if (!file) return;
+
+        const url = URL.createObjectURL(file);
+        const image = new Image();
+        image.onload = () => {
+          const fileTexture = createImageTexture(image);
+          setFabricTexture(fileTexture);
+          URL.revokeObjectURL(url);
+        };
+        image.src = url;
+      });
+    }
 
     const mesh = new THREE.Mesh(geometry, material);
     scene.add(mesh);
