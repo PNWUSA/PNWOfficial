@@ -533,7 +533,9 @@ function initBackgroundColorSwitcher() {
 
   colorSwitcherBtn.addEventListener("click", () => {
     // Remove previous color class
-    document.body.classList.remove(...colorPalette.map(c => c.class));
+    const colorClasses = colorPalette.map(c => c.class);
+    document.body.classList.remove(...colorClasses);
+    document.documentElement.classList.remove(...colorClasses);
 
     // Move to next color
     currentColorIndex = (currentColorIndex + 1) % colorPalette.length;
@@ -541,6 +543,7 @@ function initBackgroundColorSwitcher() {
 
     // Apply new color class
     document.body.classList.add(selectedColor.class);
+    document.documentElement.classList.add(selectedColor.class);
 
     // Update dot color to reflect current background
     if (bgDot) {
@@ -558,6 +561,7 @@ function initBackgroundColorSwitcher() {
     if (savedColorObj) {
       currentColorIndex = colorPalette.indexOf(savedColorObj);
       document.body.classList.add(savedColor);
+      document.documentElement.classList.add(savedColor);
       if (bgDot) {
         bgDot.style.backgroundColor = savedColorObj.hex;
       }
