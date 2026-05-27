@@ -473,15 +473,49 @@ function initContactForm() {
 function initFactoryVideo() {
   const poster = document.getElementById("video-poster");
   const video = document.getElementById("factory-video");
+  const host = document.getElementById("factory-video-host");
 
-  if (poster && video) {
-    poster.addEventListener("click", () => {
-      poster.style.opacity = "0";
-      poster.style.pointerEvents = "none";
-      video.play();
-      video.controls = true;
+  if (!poster || !video) return;
+
+  const youtubeUrl = video.getAttribute("data-youtube") || "";
+  const start = Number(video.getAttribute("data-start") || 0);
+  const end = Number(video.getAttribute("data-end") || 0);
+
+  const playYoutubeClip = () => {
+    if (!youtubeUrl || !host) return false;
+
+    const embedMatch = youtubeUrl.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|shorts\/))([A-Za-z0-9_-]{11})/);
+    if (!embedMatch) return false;
+
+    const videoId = embedMatch[1];
+    const params = new URLSearchParams({
+      autoplay: "1",
+      controls: "1",
+      rel: "0",
+      modestbranding: "1",
+      playsinline: "1",
+      mute: "1"
     });
-  }
+
+    if (start > 0) params.set("start", String(start));
+    if (end > start) params.set("end", String(end));
+
+    host.innerHTML = `<iframe src="https://www.youtube.com/embed/${videoId}?${params.toString()}" title="Factory Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+    host.classList.add("active");
+    return true;
+  };
+
+  poster.addEventListener("click", () => {
+    poster.style.opacity = "0";
+    poster.style.pointerEvents = "none";
+
+    if (youtubeUrl && playYoutubeClip()) {
+      return;
+    }
+
+    video.controls = true;
+    video.play().catch(() => {});
+  });
 }
 
 // Dynamic header navigation highlight on scroll

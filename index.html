@@ -390,8 +390,9 @@
               <span>PNW STUDIO TOUR / 2026</span>
             </div>
           </div>
-          <!-- Clean local video tag (will be loaded once actual file is provided) -->
-          <video id="factory-video" src="factory_tour.mp4" loop muted playsinline preload="metadata"></video>
+          <!-- Local MP4 fallback, or replace with YouTube segment settings below -->
+          <div id="factory-video-host" class="factory-video-host"></div>
+          <video id="factory-video" src="factory_tour.mp4" loop="false" muted playsinline preload="metadata" data-youtube="https://www.youtube.com/watch?v=ilfGVMVJR58" data-start="9" data-end="135"></video>
         </div>
       </div>
     </div>

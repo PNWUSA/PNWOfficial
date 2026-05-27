@@ -762,6 +762,29 @@ a {
   color: var(--color-text-secondary);
 }
 
+.factory-video-host {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  opacity: 0;
+  pointer-events: none;
+  background: #000;
+}
+
+.factory-video-host.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.factory-video-host iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
 video {
   width: 100%;
   height: 100%;
