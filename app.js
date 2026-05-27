@@ -26,7 +26,7 @@ const translations = {
     "product_leggings_desc": "High-compression, squat-proof leggings with seamless construction for ultimate comfort and contouring.",
     "product_leggings_fabrics": "Interlock Nylon-Spandex / Brushed Polyester",
     "product_leggings_custom": "Waistband height, pocket addition, laser-cut patterns, seamless knit logos",
-    "product_tee_name": "Premium Oversized Tee",
+    "product_tee_name": "Premium Active Tee",
     "product_tee_desc": "Heavyweight active tee with dropped shoulders, built to survive intense workouts and casual street styling.",
     "product_tee_fabrics": "100% Premium Cotton / Pima-Cotton Blend / Polyester-Cotton",
     "product_tee_custom": "Fabric weight (GSM), neckline ribbing width, custom wash effects, screen print/embroidery",
@@ -486,27 +486,33 @@ function initFactoryVideo() {
 
 // Dynamic header navigation highlight on scroll
 function initActiveLinks() {
-  const sections = document.querySelectorAll("section[id]");
-  const navLinks = document.querySelectorAll(".nav-link");
+  const sections = Array.from(document.querySelectorAll("section[id]"));
+  const navLinks = Array.from(document.querySelectorAll(".nav-link"));
 
-  window.addEventListener("scroll", () => {
-    let scrollY = window.pageYOffset;
-    
-    sections.forEach(section => {
-      const sectionHeight = section.offsetHeight;
-      const sectionTop = section.offsetTop - 120; // offset header height
-      const sectionId = section.getAttribute("id");
-      
-      if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-        navLinks.forEach(link => {
-          link.classList.remove("active");
-          if (link.getAttribute("href") === `#${sectionId}`) {
-            link.classList.add("active");
-          }
-        });
+  const setActiveLink = (id) => {
+    navLinks.forEach(link => {
+      if (link.getAttribute("href") === `#${id}`) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
       }
     });
-  });
+  };
+
+  const updateActiveLink = () => {
+    const scrollPosition = window.scrollY + window.innerHeight * 0.35;
+    const currentSection = sections.find(section => {
+      return section.offsetTop <= scrollPosition && section.offsetTop + section.offsetHeight > scrollPosition;
+    });
+
+    if (currentSection) {
+      setActiveLink(currentSection.id);
+    }
+  };
+
+  window.addEventListener("scroll", () => window.requestAnimationFrame(updateActiveLink));
+  window.addEventListener("resize", () => window.requestAnimationFrame(updateActiveLink));
+  updateActiveLink();
 }
 
 // Background Color Switcher
