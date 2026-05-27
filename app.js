@@ -506,7 +506,9 @@ function initFactoryVideo() {
   };
 
   poster.addEventListener("click", () => {
+    poster.classList.add("is-hidden");
     poster.style.opacity = "0";
+    poster.style.visibility = "hidden";
     poster.style.pointerEvents = "none";
 
     if (youtubeUrl && playYoutubeClip()) {
