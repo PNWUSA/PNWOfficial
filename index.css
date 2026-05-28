@@ -540,12 +540,14 @@ a {
 
 .fabric-card-tags .tag {
   font-size: 0.7rem;
-  background-color: var(--color-overlay-strong);
-  backdrop-filter: blur(10px);
-  padding: 4px 10px;
-  border-radius: 4px;
-  color: var(--color-text-primary);
-  border: 1px solid var(--color-border);
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 6px 12px;
+  border-radius: 8px;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
   letter-spacing: 0.05em;
 }
 
