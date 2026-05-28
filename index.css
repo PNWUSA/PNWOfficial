@@ -61,9 +61,7 @@ h1, h2, h3, h4 {
 h2 {
   font-size: 2.5rem;
   margin-bottom: 12px;
-  background: linear-gradient(180deg, #ffffff 0%, var(--color-text-secondary) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--color-text-primary);
 }
 
 p {
@@ -496,6 +494,17 @@ a {
   position: relative;
   aspect-ratio: 16 / 10;
   background-color: #0b0b0b;
+  overflow: hidden;
+}
+
+.fabric-visual .fabric-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  opacity: 0.95;
 }
 
 .webgl-fabric-canvas {
@@ -867,7 +876,7 @@ video {
   font-family: var(--font-title);
   font-size: 1.5rem;
   font-weight: 700;
-  color: #1e1e1e; /* Stealth grey for future placeholders */
+  color: var(--color-text-primary);
   letter-spacing: 0.05em;
   user-select: none;
 }
