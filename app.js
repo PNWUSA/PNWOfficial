@@ -69,7 +69,7 @@ const translations = {
     "section_story_title": "Crafted for Excellence, Built to Perform",
     "section_story_sub": "Precision-driven manufacturing from our facilities in China and Cambodia, with dedicated sales support in the U.S.",
     "section_story_desc": "At PNW, every garment reflects our commitment to excellence. Our production facilities in China and Cambodia house advanced flatlock and overlock machinery, laser-cutting systems, and specialized seamstresses with decades of activewear expertise. From reinforced bonded seams and ergonomic stitching patterns to meticulous hand-finished quality checks — we ensure your product rivals top-tier retail brands. Our U.S. sales team provides seamless, timezone-friendly communication throughout your project.",
-    "section_about_title": "The PNW Partnership Edge <br> Premium Fabric Craftsmanship",
+    "section_about_title": "The PNW Partnership Edge - Premium Fabric Craftsmanship",
     "section_about_sub": "Our expertise is in fabric development, precision cut-and-sew, and the finishing details that make every garment feel premium.",
     "about_feature_moq_title": "Fabric-Forward Craftsmanship",
     "about_feature_moq_desc": "Every material choice, cut, and stitch is optimized for hand feel, durability, and performance across your collection.",
