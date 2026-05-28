@@ -47,6 +47,15 @@ const translations = {
     "fabric_knit_name": "FlexKnit Seamless Tech",
     "fabric_knit_desc": "Engineered seamless construction that maps compression zones to your body. Minimizes friction and maximizes breathability.",
     "fabric_knit_tags": "Frictionless · Zone Compression · Max Breathable",
+    "fabric_airmesh_name": "AirMesh Performance Weave",
+    "fabric_airmesh_desc": "Engineered for high-airflow comfort, this lightweight weave maintains structure while accelerating moisture release.",
+    "fabric_airmesh_tags": "Airflow · Lightweight · Rapid Dry",
+    "fabric_hydrodry_name": "HydroDry Stretch Knit",
+    "fabric_hydrodry_desc": "Advanced stretch knit with fast-dry performance and a second-skin hand feel ideal for training tops and sportswear.",
+    "fabric_hydrodry_tags": "Moisture Control · Smooth Handle · 4-Way Stretch",
+    "fabric_aerotech_name": "AeroTech Compression Mesh",
+    "fabric_aerotech_desc": "Structured compression mesh designed for breathability, stability, and dynamic support in performance apparel.",
+    "fabric_aerotech_tags": "Compression · Stability · Ventilated",
     "section_services_title": "Our OEM Workflow",
     "section_services_sub": "From concept to delivery, our streamlined process ensures retail-ready garments at high speed.",
     "service_step_1": "01. Design & Tech Pack",
@@ -60,14 +69,14 @@ const translations = {
     "section_story_title": "Crafted for Excellence, Built to Perform",
     "section_story_sub": "Precision-driven manufacturing from our facilities in China and Cambodia, with dedicated sales support in the U.S.",
     "section_story_desc": "At PNW, every garment reflects our commitment to excellence. Our production facilities in China and Cambodia house advanced flatlock and overlock machinery, laser-cutting systems, and specialized seamstresses with decades of activewear expertise. From reinforced bonded seams and ergonomic stitching patterns to meticulous hand-finished quality checks — we ensure your product rivals top-tier retail brands. Our U.S. sales team provides seamless, timezone-friendly communication throughout your project.",
-    "section_about_title": "Why Partner With PNW?",
-    "section_about_sub": "Built to scale with modern brands, solving the common bottlenecks of garment manufacturing.",
-    "about_feature_moq_title": "Low MOQ Limits",
-    "about_feature_moq_desc": "We support growing brands and private labels by eliminating rigid minimum order quantities. Start your line with confidence.",
-    "about_feature_focus_title": "Activewear Specialists",
-    "about_feature_focus_desc": "Unlike general factories, we only build performance activewear and premium athleisure. We know the details that matter.",
-    "about_feature_quality_title": "Reliable & Transparent",
-    "about_feature_quality_desc": "With sales teams based in the U.S., we provide timezone-friendly bilingual communication, precise delivery commitments, and consistent sizing across every production batch.",
+    "section_about_title": "Why Partner With PNW? Premium Fabric Craftsmanship",
+    "section_about_sub": "Our expertise is in fabric development, precision cut-and-sew, and the finishing details that make every garment feel premium.",
+    "about_feature_moq_title": "Fabric-Forward Craftsmanship",
+    "about_feature_moq_desc": "Every material choice, cut, and stitch is optimized for hand feel, durability, and performance across your collection.",
+    "about_feature_focus_title": "Signature Sewing & Finish",
+    "about_feature_focus_desc": "Our production teams deliver advanced flatlock seams, clean bonded finishes and premium surface quality on every item.",
+    "about_feature_quality_title": "Quality Control in Every Stitch",
+    "about_feature_quality_desc": "Multi-stage inspections, fit review and finish checks ensure your finished pieces arrive with retail-ready polish.",
     "section_faq_title": "Frequently Asked Questions",
     "section_faq_sub": "Everything you need to know about starting an OEM partnership with PNW.",
     "faq_q1": "What is your Minimum Order Quantity (MOQ)?",
@@ -147,6 +156,15 @@ const translations = {
     "fabric_knit_name": "FlexKnit 無縫一體成型科技",
     "fabric_knit_desc": "透過精密無縫針織將不同壓縮比的織法融為一體，減少身體摩擦，達到最佳透氣性。",
     "fabric_knit_tags": "減少摩擦 · 區域壓力分佈 · 極致透氣",
+    "fabric_airmesh_name": "AirMesh 專業透氣織法",
+    "fabric_airmesh_desc": "專為高透氣舒適設計的輕量織法，加速濕氣排散，同時維持結構穩定。",
+    "fabric_airmesh_tags": "高透氣 · 極輕量 · 快速排汗",
+    "fabric_hydrodry_name": "HydroDry 伸縮針織",
+    "fabric_hydrodry_desc": "高彈針織布具備快乾效能與第二層肌膚般觸感，適合訓練與運動上衣。",
+    "fabric_hydrodry_tags": "吸濕排汗 · 柔滑手感 · 四面彈力",
+    "fabric_aerotech_name": "AeroTech 壓縮網眼",
+    "fabric_aerotech_desc": "結構化壓縮網眼設計，兼具高透氣性、穩定支撐與動態貼合效果。",
+    "fabric_aerotech_tags": "壓縮 · 支撐 · 高導濕",
     "section_services_title": "我們的服務流程",
     "section_services_sub": "從概念設計到全球交付，標準化的高效流程確保產品完美落地。",
     "service_step_1": "01. 設計研發與工藝單",
@@ -160,14 +178,14 @@ const translations = {
     "section_story_title": "極致工藝，全球佈局",
     "section_story_sub": "中國大陸與柬埔寨雙廠區精密製造，美國與澳洲在地業務團隊全程服務。",
     "section_story_desc": "在 PNW，每一件成衣都體現了我們對工藝的極致追求。我們位於中國大陸及柬埔寨的生產基地配備了先進的包縫機、拼接車縫設備與雷射裁切系統，並由擁有數十年運動服飾製造經驗的專業車縫師操刀。從強化貼合車縫、人體工學版型縫製，到嚴謹的手工收尾品檢，我們確保您的產品能比肩頂級零售品牌。同時，我們在美國與澳洲的業務團隊提供無時差的即時溝通服務。",
-    "section_about_title": "為什麼選擇 PNW？",
-    "section_about_sub": "專為現代運動服飾品牌量身定制，打破傳統成衣的限制與痛點。",
-    "about_feature_moq_title": "零最低起訂量限制",
-    "about_feature_moq_desc": "為了大力扶持新創品牌與設計師品牌，我們提供無 MOQ 門檻的首發生產，讓您能輕資產測試市場。",
-    "about_feature_focus_title": "專注於 Activewear 製造",
-    "about_feature_focus_desc": "與雜食性工廠不同，我們只做高彈性運動服飾與高階運動休閒服裝，深知細節與工法之所在。",
-    "about_feature_quality_title": "高度可靠與高透明度",
-    "about_feature_quality_desc": "美國與澳洲在地業務團隊提供無時差的雙語即時溝通，確保精準的交期承諾與每批次始終如一的尺寸穩定性。",
+    "section_about_title": "為什麼選擇 PNW？優質面料工藝",
+    "section_about_sub": "從面料開發到縫製完成，我們以精細工藝與嚴謹手作打磨每一件成衣。",
+    "about_feature_moq_title": "面料先行的工藝力",
+    "about_feature_moq_desc": "我們的材料選擇、裁片與縫製皆為極致手感、耐用與機能性而設計。",
+    "about_feature_focus_title": "品牌級縫製與細節",
+    "about_feature_focus_desc": "專業產線執行高階平縫、壓膠與精緻車縫，確保成品具備高質感與零失誤。",
+    "about_feature_quality_title": "每一針每一線皆嚴格把關",
+    "about_feature_quality_desc": "多階段品檢、版型測試與精裝檢驗，讓交付成衣擁有零售級品質。",
     "section_faq_title": "常見問題解答",
     "section_faq_sub": "在這裡您可以找到與 PNW 展開 OEM / 私人標籤合作的常見問題。",
     "faq_q1": "你們的最低起訂量（MOQ）是多少？",
@@ -247,6 +265,15 @@ const translations = {
     "fabric_knit_name": "FlexKnit 无缝一体成型科技",
     "fabric_knit_desc": "通过精密无缝针织将不同压缩比的织法融为一体，减少身体摩擦，达到最佳透气性。",
     "fabric_knit_tags": "减少摩擦 · 区域压力分布 · 极致透气",
+    "fabric_airmesh_name": "AirMesh 专业透气织法",
+    "fabric_airmesh_desc": "专为高透气舒适设计的轻量织法，加速湿气排散，同时维持结构稳定。",
+    "fabric_airmesh_tags": "高透气 · 极轻量 · 快速排汗",
+    "fabric_hydrodry_name": "HydroDry 弹力针织",
+    "fabric_hydrodry_desc": "高弹针织布具备快干效能与第二层肌肤般触感，适合训练与运动上衣。",
+    "fabric_hydrodry_tags": "吸湿排汗 · 柔滑手感 · 四面弹力",
+    "fabric_aerotech_name": "AeroTech 压缩网眼",
+    "fabric_aerotech_desc": "结构化压缩网眼设计，兼具高透气性、稳定支撑与动态贴合效果。",
+    "fabric_aerotech_tags": "压缩 · 支撑 · 高导湿",
     "section_services_title": "我们的服务流程",
     "section_services_sub": "从概念设计到全球交付，标准化的高效流程确保产品完美落地。",
     "service_step_1": "01. 设计研发与工艺单",
@@ -260,14 +287,14 @@ const translations = {
     "section_story_title": "极致工艺，全球布局",
     "section_story_sub": "中国大陆与柬埔寨双厂区精密制造，美国与澳洲本地业务团队全程服务。",
     "section_story_desc": "在 PNW，每一件成衣都体现了我们对工艺的极致追求。我们位于中国大陆及柬埔寨的生产基地配备了先进的包缝机、拼接缝纫设备与激光裁切系统，并由拥有数十年运动服饰制造经验的专业缝纫师操刀。从强化贴合缝制、人体工学版型缝纫，到严谨的手工收尾品检，我们确保您的产品能比肩顶级零售品牌。同时，我们在美国与澳洲的业务团队提供无时差的即时沟通服务。",
-    "section_about_title": "为什么选择 PNW？",
-    "section_about_sub": "专为现代运动服饰品牌量身定制，打破传统成衣的限制与痛点。",
-    "about_feature_moq_title": "零最低起订量限制",
-    "about_feature_moq_desc": "为了大力扶持新创品牌与设计师品牌，我们提供无 MOQ 门槛的首发生产，让您能轻资产测试市场。",
-    "about_feature_focus_title": "专注于 Activewear 制造",
-    "about_feature_focus_desc": "与杂食性工厂不同，我们只做高弹性运动服饰与高阶运动休闲服装，深知细节与工法之所在。",
-    "about_feature_quality_title": "高度可靠与高透明度",
-    "about_feature_quality_desc": "美国与澳洲本地业务团队提供无时差的双语即时沟通，确保精准的交期承诺与每批次始终如一的尺寸稳定性。",
+    "section_about_title": "为什么选择 PNW？优质面料工艺",
+    "section_about_sub": "从面料开发到缝制完成，我们以精细工艺与严谨手作打磨每一件成衣。",
+    "about_feature_moq_title": "面料优先的工艺力",
+    "about_feature_moq_desc": "我们的材料选择、裁片与缝制皆为极致手感、耐用与机能性而设计。",
+    "about_feature_focus_title": "品牌级缝制与细节",
+    "about_feature_focus_desc": "专业产线执行高阶平缝、压胶与精致车缝，确保成品具备高质感与零失误。",
+    "about_feature_quality_title": "每一针每一线都严格把关",
+    "about_feature_quality_desc": "多阶段品检、版型测试与精装检验，让交付成衣拥有零售级品质。",
     "section_faq_title": "常见问题解答",
     "section_faq_sub": "在这里您可以找到与 PNW 展开 OEM / 私人标签合作的常见问题。",
     "faq_q1": "你们的最低起订量（MOQ）是多少？",
@@ -560,14 +587,7 @@ function initBackgroundColorSwitcher() {
 
   // Define color palette: various blues and other colors (no red)
   const colorPalette = [
-    { class: "bg-white", hex: "#ffffff", label: "White" },
-    { class: "bg-navy", hex: "#0a1929", label: "Navy" },
-    { class: "bg-slate-blue", hex: "#2c3e50", label: "Slate Blue" },
-    { class: "bg-steel", hex: "#3d4a5c", label: "Steel" },
-    { class: "bg-slate", hex: "#708090", label: "Slate" },
-    { class: "bg-light-gray", hex: "#e8e8e8", label: "Light Gray" },
     { class: "bg-sky", hex: "#87ceeb", label: "Sky" },
-    { class: "bg-powder-blue", hex: "#b0e0e6", label: "Powder Blue" },
     { class: "bg-dark", hex: "#1a1a1a", label: "Dark" }
   ];
 
@@ -609,9 +629,12 @@ function initBackgroundColorSwitcher() {
       }
     }
   } else {
-    // Set initial dot color to dark (default)
+    currentColorIndex = 0;
+    const defaultColor = colorPalette[0];
+    document.body.classList.add(defaultColor.class);
+    document.documentElement.classList.add(defaultColor.class);
     if (bgDot) {
-      bgDot.style.backgroundColor = "#000000";
+      bgDot.style.backgroundColor = defaultColor.hex;
     }
   }
 }
@@ -682,6 +705,48 @@ function createFabricTexture(type) {
       for (let y = 0; y < h; y += 12) {
         ctx.beginPath();
         ctx.arc(x + 6, y + 6, 4, 0, Math.PI);
+        ctx.stroke();
+      }
+    }
+  } else if (type === "airmesh") {
+    ctx.fillStyle = "#0f1a28";
+    ctx.fillRect(0, 0, w, h);
+    ctx.strokeStyle = "#152b47";
+    ctx.lineWidth = 2;
+    for (let y = 8; y < h; y += 20) {
+      for (let x = 8; x < w; x += 20) {
+        ctx.beginPath();
+        ctx.arc(x, y, 6, 0, Math.PI * 2);
+        ctx.stroke();
+      }
+    }
+  } else if (type === "hydrodry") {
+    ctx.fillStyle = "#081219";
+    ctx.fillRect(0, 0, w, h);
+    ctx.strokeStyle = "#0d2542";
+    ctx.lineWidth = 4;
+    for (let i = -w; i < w * 2; i += 28) {
+      ctx.beginPath();
+      ctx.moveTo(i, 0);
+      ctx.lineTo(i + h * 0.7, h);
+      ctx.stroke();
+    }
+    ctx.fillStyle = "rgba(14, 40, 74, 0.18)";
+    for (let x = 0; x < w; x += 40) {
+      for (let y = 0; y < h; y += 40) {
+        ctx.fillRect(x + 10, y + 10, 12, 12);
+      }
+    }
+  } else if (type === "aerotech") {
+    ctx.fillStyle = "#091420";
+    ctx.fillRect(0, 0, w, h);
+    ctx.strokeStyle = "#13324f";
+    ctx.lineWidth = 3;
+    const cell = 28;
+    for (let y = 0; y < h + cell; y += cell) {
+      for (let x = 0; x < w + cell; x += cell) {
+        ctx.beginPath();
+        ctx.rect(x, y, cell - 8, cell - 8);
         ctx.stroke();
       }
     }

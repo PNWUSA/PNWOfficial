@@ -1135,12 +1135,25 @@ video {
 
 /* Background Color Themes */
 html.bg-white, body.bg-white {
-  background-color: #ffffff;
-  --color-bg-darkest: #f7f8fb;
-  --color-bg-dark: #ebeff4;
+  background-color: #f7faff;
+  --color-bg-darkest: #f7faff;
+  --color-bg-dark: #eef4fb;
   --color-bg-card: #ffffff;
-  --color-bg-card-hover: #f3f6fb;
+  --color-bg-card-hover: #f3f7fb;
   --color-border: #d4d9e2;
+  --color-text-primary: #102a44;
+  --color-text-secondary: #576278;
+}
+
+html.bg-sky, body.bg-sky {
+  background-color: #e8f5ff;
+  --color-bg-darkest: #e8f5ff;
+  --color-bg-dark: #d8ebff;
+  --color-bg-card: #ffffff;
+  --color-bg-card-hover: #f3f8ff;
+  --color-border: #c6dbed;
+  --color-text-primary: #102a44;
+  --color-text-secondary: #5e7287;
 }
 
 html.bg-dark, body.bg-dark {
