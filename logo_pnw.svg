@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1387.022373 354.089029">
-  <g transform="translate(-197.000000,619.000000) scale(0.100000,-0.100000)" fill="#EFBF04" stroke="none">
+  <!-- 定義金色漸層 -->
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F7E27A"/>
+      <stop offset="50%" stop-color="#EFBF04"/>
+      <stop offset="100%" stop-color="#C99700"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(-197.000000,619.000000) scale(0.100000,-0.100000)" fill="url(#goldGradient)" stroke="none">
     <path d="M1970 6151 c0 -141 102 -300 245 -381 123 -69 0 -64 1625 -70 1655
 -6 1501 2 1619 -84 292 -215 171 -656 -195 -716 -36 -6 -613 -10 -1472 -10
 -1548 0 -1456 3 -1577 -58 -64 -32 -165 -134 -193 -195 -53 -114 -52 -93 -50
