@@ -4,8 +4,8 @@
   <defs>
     <linearGradient id="goldGradient" gradientUnits="userSpaceOnUse" x1="1970" y1="0" x2="15840" y2="0">
       <stop offset="0%" stop-color="#F7E27A"/>
-      <stop offset="60%" stop-color="#EFBF04"/>
-      <stop offset="100%" stop-color="#C99700"/>
+      <stop offset="60%" stop-color="#c5a880"/>
+      <stop offset="100%" stop-color="#EFBF04"/>
     </linearGradient>
   </defs>
 
