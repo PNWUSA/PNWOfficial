@@ -2,9 +2,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1387.022373 354.089029">
   <!-- 定義金色漸層 -->
   <defs>
-    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="goldGradient" gradientUnits="userSpaceOnUse" x1="1970" y1="0" x2="15840" y2="0">
       <stop offset="0%" stop-color="#F7E27A"/>
-      <stop offset="50%" stop-color="#EFBF04"/>
+      <stop offset="60%" stop-color="#EFBF04"/>
       <stop offset="100%" stop-color="#C99700"/>
     </linearGradient>
   </defs>
